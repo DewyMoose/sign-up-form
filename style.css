@@ -1,0 +1,154 @@
+/* css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+:root {
+  --button-color: #596d48;
+  --input-default-border: #e5e7eb;
+}
+
+.screen-container {
+  display: flex;
+  background-color: rgb(230, 230, 230);
+}
+
+.image-container {
+  display: flex;
+  height: 100vh;
+  width: 900px;
+  position: relative;
+}
+
+/* background image */
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Text and logo div */
+
+.h1-div {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.odin-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.odin-h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ded6d611;
+  margin-top: 200px;
+}
+
+.description-text {
+  margin-top: 20%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 28px;
+  font-weight: 550;
+  margin: 0 300px 0 100px;
+}
+
+.signup-container {
+  background-color: white;
+  padding: 20px 0 100px 0;
+  width: 100%;
+  box-shadow: 5px 0 5px 0;
+}
+
+.signup-container > p {
+  margin: 0 300px 0 100px;
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 550;
+}
+.signup-blocks {
+  margin: 0 300px 0 100px;
+  display: flex;
+  height: 100%;
+}
+
+.first-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.second-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+}
+input {
+  width: 200px;
+  border-radius: 3px;
+  border-style: none;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+input:focus {
+  outline: 1px solid blue;
+}
+label {
+  color: rgb(76, 76, 76);
+  margin-bottom: -1px;
+  margin-top: 20px;
+}
+
+.footer {
+  margin-top: 50px;
+  width: 100%;
+}
+
+button {
+  margin-left: 100px;
+  padding: 15px 45px;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  color: whitesmoke;
+  font-size: 18px;
+  border-style: none;
+}
+
+.footer > p {
+  font-size: 18px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+#email:invalid,
+#password:invalid,
+#confirmPassword:invalid {
+  outline: 1px solid red;
+}

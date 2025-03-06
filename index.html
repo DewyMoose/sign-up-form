@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="screen-container">
+      <div class="image-container">
+        <img src="ODIN PROJECT IMAGE.jpg" alt="picutre of bmw" />
+        <div class="h1-div">
+          <img src="odin-lined.png" alt="odin logo" class="odin-logo" />
+          <h1 class="odin-h1">ODIN</h1>
+        </div>
+      </div>
+      <div class="form-container">
+        <div class="description-text">
+          <p>
+            This is not a real online service! you know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <p>you <em>know</em> you want to</p>
+        </div>
+        <form action="#" method="get">
+          <div class="signup-container">
+            <p>Let's do this!</p>
+            <div class="signup-blocks">
+              <div class="first-block">
+                <label for="firstName">FIRST NAME</label>
+                <input required type="text" name="firstName" id="firstName" />
+                <label for="lastName">LAST NAME</label>
+                <input required type="text" name="lastName" id="lastName" />
+                <label for="email">EMAIL</label>
+                <input required type="email" name="email" id="email" />
+              </div>
+              <div class="second-block">
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input
+                  maxlength="12"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  type="tel"
+                  required
+                  type="number"
+                  name="phoneNumber"
+                  id="phoneNumber"
+                />
+                <label for="password">PASSWORD</label>
+                <input required type="password" name="password" id="password" />
+                <label for="confirmPassword">CONFIRM PASSWORD</label>
+                <input
+                  required
+                  type="password"
+                  name="confirmPassword"
+                  id="confirmPassword"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Login in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
